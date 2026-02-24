@@ -1,4 +1,3 @@
-// LIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp : Defines the exported functions for the DLL.
 #include "pch.h"
 #include "framework.h"
 #include "LIB_LaunchEnableForConcurrentThreadsAt_SERVER.h"
