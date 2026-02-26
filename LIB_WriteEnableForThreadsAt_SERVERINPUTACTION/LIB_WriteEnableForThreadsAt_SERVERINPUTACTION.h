@@ -17,10 +17,10 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 // public.
 	// dynamic.
 		static void* generate_Program();
-		static void write_End(WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
-		static void write_Start(WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
+		static void write_End(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
+		static void write_Start(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* obj, uint8_t coreId);
 		// get.
-		static WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* get_ptr_Framework();
+		static class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* get_ptr_Framework();
 		// set.
 	// static.
 		// get.
@@ -34,9 +34,9 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
 	// static.
 		static void create_Framework();
 		// get.
-		static WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* stat_get_ptr_Framework();
+		static class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* stat_get_ptr_Framework();
 		// set.
-		static void stat_set_ptr_Framework(WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* newPtr);
+		static void stat_set_ptr_Framework(class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* newPtr);
 	// pointers.
 		// classes.
 		// registers.
