@@ -18,19 +18,19 @@
     <ClInclude Include="framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_END.h">
+    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_SERVER.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_END_Control.h">
+    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_SERVER_Control.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_END_Framework.h">
+    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_SERVER_Framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_END_Global.h">
+    <ClInclude Include="LaunchEnableForConcurrentThreadsAt_SERVER_Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LIB_LaunchEnableForConcurrentThreadsAt_END.h">
+    <ClInclude Include="LIB_LaunchEnableForConcurrentThreadsAt_SERVER.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
@@ -44,19 +44,19 @@
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_END.cpp">
+    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_SERVER.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_END_Control.cpp">
+    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_SERVER_Control.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_END_Framework.cpp">
+    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_SERVER_Framework.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_END_Global.cpp">
+    <ClCompile Include="LaunchEnableForConcurrentThreadsAt_SERVER_Global.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LIB_LaunchEnableForConcurrentThreadsAt_END.cpp">
+    <ClCompile Include="LIB_LaunchEnableForConcurrentThreadsAt_SERVER.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,15 +1,15 @@
 #pragma once
 
-namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND
+namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT
 {
-    class LaunchEnableForConcurrentThreadsAt_END_Global
+    class LaunchEnableForConcurrentThreadsAt_CLIENT_Global
     {
     public:
 // constructor.
-        LaunchEnableForConcurrentThreadsAt_END_Global();
+        LaunchEnableForConcurrentThreadsAt_CLIENT_Global();
 
 // destructor.
-        ~LaunchEnableForConcurrentThreadsAt_END_Global();
+        ~LaunchEnableForConcurrentThreadsAt_CLIENT_Global();
 
 // public.
     // dynamic.

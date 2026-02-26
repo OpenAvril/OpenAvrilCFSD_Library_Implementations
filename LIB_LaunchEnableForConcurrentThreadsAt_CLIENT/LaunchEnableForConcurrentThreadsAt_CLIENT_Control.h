@@ -1,8 +1,8 @@
 #pragma once
 
-namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND
+namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT
 {
-    class LaunchEnableForConcurrentThreadsAt_END_Control
+    class LaunchEnableForConcurrentThreadsAt_CLIENT_Control
     {
 // classes.
 
@@ -12,10 +12,10 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND
 
     public:
 // constructor.
-        LaunchEnableForConcurrentThreadsAt_END_Control();
+        LaunchEnableForConcurrentThreadsAt_CLIENT_Control();
 
 // destructor.
-        virtual ~LaunchEnableForConcurrentThreadsAt_END_Control();
+        virtual ~LaunchEnableForConcurrentThreadsAt_CLIENT_Control();
 
 // public.
     // dynamic.
@@ -23,13 +23,13 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND
         void initialise_flag_praisinglaunch(bool* newINITIALISED_Flagbit);
         void initialise_Item_On_list_Of_launchActive_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t* newINITIALISED_Value);
         void initialise_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t* newINITIALISED_Value);
-        void initialise_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID, class LaunchEnableForConcurrentThreadsAt_END_Global* ptr_Global);
+        void initialise_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID, class LaunchEnableForConcurrentThreadsAt_CLIENT_Global* ptr_Global);
         void initialise_Item_On_list_Of_Que_Of_CoreTolaunch(uint8_t slotID);
         void initialise_new_concurrentCycle_Try_CoreId_Index(uint8_t* newINITIALISED_Value);
-        void launchEnable_Activate(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj);
-        void launchEnable_Request(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t concurrentThreadID);
-        void launchEnable_SortQue(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t number_Implemented_Threads);
-        void launchQue_Update(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t number_Implemented_Threads);
+        void launchEnable_Activate(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj);
+        void launchEnable_Request(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrentThreadID);
+        void launchEnable_SortQue(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t number_Implemented_Threads);
+        void launchQue_Update(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t number_Implemented_Threads);
         // get.
         uint8_t get_concurrentCycle_Try_CoreId_Index();
         bool get_flag_praisinglaunch();
@@ -53,8 +53,8 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND
     private:
 // private.
     // dynamic.
-        void dynamicStagger(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t coreId);
-        void launchEnable_ShiftQueValues(class LaunchEnableForConcurrentThreadsAt_END_Framework* obj, uint8_t concurrentThreadID_A, uint8_t concurrentThreadID_B);
+        void dynamicStagger(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t coreId);
+        void launchEnable_ShiftQueValues(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrentThreadID_A, uint8_t concurrentThreadID_B);
         // get.
         // set.
     // static.
