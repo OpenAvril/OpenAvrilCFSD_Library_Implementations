@@ -1,4 +1,4 @@
-# LIBRARIES Template(s) for Avril Open Concurrent Full Stack Development.
+# LIBRARY Template(s) for OpenAvrilConcurrent and OpenAvrilCFSD - Concurrent Full Stack Development.
 ## C# .NET Console.
 
 ## Using Windows 11 Home.
