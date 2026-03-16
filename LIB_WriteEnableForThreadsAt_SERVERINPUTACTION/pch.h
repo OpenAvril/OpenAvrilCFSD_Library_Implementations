@@ -9,10 +9,10 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include <array>
 #include <cstdint>
 #include <cstddef>
 #include <iostream>
-#include <array>
 #include <vector>
 #include <list>
 #include "WriteEnableForThreadsAt_SERVERINPUTACTION_Framework.h"

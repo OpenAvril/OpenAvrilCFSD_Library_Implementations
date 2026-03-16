@@ -9,11 +9,11 @@
 
 // add headers that you want to pre-compile here
 #include "framework.h"
+#include <array>
 #include <cstdint>
 #include <cstddef>
-#include <array>
-#include <vector>
 #include <iostream>
+#include <vector>
 #include <list>
 #include "LaunchEnableForConcurrentThreadsAt_SERVER_Framework.h"
 #include "LaunchEnableForConcurrentThreadsAt_SERVER_Global.h"

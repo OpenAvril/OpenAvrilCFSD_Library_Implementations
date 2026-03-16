@@ -1,47 +1,55 @@
 #pragma once
 
-namespace OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION
+namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION
 {
     class WriteEnableForThreadsAt_CLIENTINPUTACTION
     {
     public:
-// constructor.
+// public.
+    // constructor.
         WriteEnableForThreadsAt_CLIENTINPUTACTION();
 
-// destructor.
+    // destructor.
         virtual ~WriteEnableForThreadsAt_CLIENTINPUTACTION();
 
-// public.
     // dynamic.
-        void initialise_Control(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj);
-        void write_End(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId);
-        void write_Start(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId);
+        void dyn_initialise_Control(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj);
+        void dyn_write_End(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId);
+        void dyn_write_Start(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId);
+        // create.    
         // get.
-        class WriteEnableForThreadsAt_CLIENTINPUTACTION_Global* get_ptr_Global();
-        class WriteEnableForThreadsAt_CLIENTINPUTACTION_Control* get_ptr_WriteEnable_Control();
+        class WriteEnableForThreadsAt_CLIENTINPUTACTION_Global* dyn_CLASS_get_ptr_Global();
+        class WriteEnableForThreadsAt_CLIENTINPUTACTION_Control* dyn_CLASS_get_ptr_WriteEnable_Control();
         // set.
     // static.
+        // create.
         // get.
         // set.
-    
-    private:
+
 // private.
     // dynamic.
-        // get.
-        // set.
-    // static.
-        static void stat_create_ptr_Global();
-        static void stat_create_ptr_WriteEnable_Control();
-        // get.
-        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Global* stat_get_ptr_Global();
-        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Control* stat_get_ptr_WriteEnable_Control();
-        // set.
-        static void stat_set_ptr_Global(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Global* global);
-        static void stat_set_ptr_WriteEnable_Control(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Control* writeEnableControl);
-    // pointers.
         // classes.
-        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Global* _ptr_Global;
-        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Control* _ptr_WriteEnable_Control;
+            // create.
+            // get.
+            // set.
         // registers.
+            // create.
+            // get.
+            // set.
+    // static.
+        // classes.
+        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Global* _stat_CLASS_ptr_Global;
+        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Control* _stat_CLASS_ptr_WriteEnable_Control;
+            // create.
+        static void stat_CLASS_create_ptr_Global();
+        static void stat_CLASS_create_ptr_WriteEnable_Control();
+            // get.
+        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Global* stat_CLASS_get_ptr_Global();
+        static class WriteEnableForThreadsAt_CLIENTINPUTACTION_Control* stat_CLASS_get_ptr_WriteEnable_Control();
+            // set.
+        // registers.
+            // create.
+            // get.
+            // set.
     };
 }

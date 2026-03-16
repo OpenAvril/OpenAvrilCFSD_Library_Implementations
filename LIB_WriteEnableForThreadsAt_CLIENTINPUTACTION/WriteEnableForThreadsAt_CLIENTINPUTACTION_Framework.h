@@ -1,21 +1,21 @@
 #pragma once
 
-namespace OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION
+namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION
 {
     class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework
     {
     public:
-// constructor.
+// public.
+    // constructor.
         WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework();
 
-// destructor.
+    // destructor.
         virtual ~WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework();
 
-// public.
     // dynamic.
-        void initialise(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj);
+        void dyn_initialise(class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj);
         // get.
-        class WriteEnableForThreadsAt_CLIENTINPUTACTION* get_ptr_WriteEnable();
+        class WriteEnableForThreadsAt_CLIENTINPUTACTION* dyn_CLASS_get_ptr_WriteEnable();
         // set.
     // static.
         // get.
@@ -24,17 +24,27 @@ namespace OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION
     private:
 // private.
     // dynamic.
-        // get.
-        // set.
-    // static.
-        static void stat_create_WriteEnable();
-        // get.
-        static class WriteEnableForThreadsAt_CLIENTINPUTACTION* stat_get_ptr_WriteEnable();
-        // set.
-        static void stat_set_ptr_WriteEnable(class WriteEnableForThreadsAt_CLIENTINPUTACTION* writeEnable);
-    // pointers.
+
         // classes.
-        static OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION* _ptr_WriteEnable;
+            // create.
+            // get.
+
+            // set.
         // registers.
+            // create.
+            // get.
+            // set.
+    // static.
+        // classes.
+        static class WriteEnableForThreadsAt_CLIENTINPUTACTION* _CLASS_get_ptr_WriteEnable;
+            // create.
+        static void stat_CLASS_create_WriteEnable();
+            // get.
+        static class WriteEnableForThreadsAt_CLIENTINPUTACTION* stat_CLASS_get_ptr_WriteEnable();
+            // set.
+        // registers.
+            // create.
+            // get.
+            // set.
     };
 }
