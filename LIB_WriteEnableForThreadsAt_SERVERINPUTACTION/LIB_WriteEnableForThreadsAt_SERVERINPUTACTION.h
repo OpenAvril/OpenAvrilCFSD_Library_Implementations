@@ -5,9 +5,9 @@
 #endif
 extern "C"
 {
-	namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION
+	namespace OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTACTION
 	{
-		class LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API CLIDWriteEnableForThreadsAtSERVERINPUTACTION
+		class LIBWRITEENABLEFORTHREADSATSERVERINPUTACTION_API CLIBWriteEnableForThreadsAtSERVERINPUTACTION
 		{
 		public:
 			static void* generate_Program();

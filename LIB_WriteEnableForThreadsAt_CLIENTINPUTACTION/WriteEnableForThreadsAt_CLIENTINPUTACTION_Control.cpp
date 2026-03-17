@@ -1,13 +1,13 @@
 #include "pch.h"
-    bool* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_ptr_flag_praisingWrite = NULL;
-    std::list<std::array<bool, 2>>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_3STATE_flag_WriteState = NULL;
-    std::list<uint32_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = NULL;
-    std::list<uint32_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = NULL;
-    std::list<uint32_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = NULL;
-    uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_new_writeCycle_Try_ThreadId_Index = NULL;
-    std::list<uint8_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_QUE_Of_ThreadID_To_WRITE = NULL;
-    uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_ptr_writeCycle_Try_ThreadId_Index = NULL;
-    OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control()
+    bool* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_ptr_flag_praisingWrite = NULL;
+    std::list<std::array<bool, 2>>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_3STATE_flag_WriteState = NULL;
+    std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = NULL;
+    std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = NULL;
+    std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = NULL;
+    uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_new_writeCycle_Try_ThreadId_Index = NULL;
+    std::list<uint8_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_QUE_Of_ThreadID_To_WRITE = NULL;
+    uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::_stat_REG_ptr_writeCycle_Try_ThreadId_Index = NULL;
+    OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control()
     {
         bool* newDEAFULT_bool = new bool(true);
         state_REG_create_flag_praisingWrite(newDEAFULT_bool);
@@ -26,7 +26,7 @@
         state_REG_create_list_Of_WriteWait_Count_For_ThreadId(newDEFAULT_uint32_t);
         delete newDEFAULT_uint32_t;
     }
-    OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::~WriteEnableForThreadsAt_CLIENTINPUTACTION_Control()
+    OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::~WriteEnableForThreadsAt_CLIENTINPUTACTION_Control()
     {
         delete _stat_REG_ptr_flag_praisingWrite;
         delete _stat_REG_LIST_Of_3STATE_flag_WriteState;
@@ -37,11 +37,11 @@
         delete _stat_REG_QUE_Of_ThreadID_To_WRITE;
         delete _stat_REG_ptr_writeCycle_Try_ThreadId_Index;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeEnable_Activate(OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeEnable_Activate(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId)
     {
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_Item_On_list_Of_2ibt_flag_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_3STATE_flag_WAIT());
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeEnable_SortQue(OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeEnable_SortQue(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj)
     {
         for (uint8_t index_A = 0; index_A < (obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads() - 1); index_A++)
         {
@@ -86,7 +86,7 @@
             }
         }
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeEnable_Request(OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeEnable_Request(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId)
     {
         while (obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_ptr_flag_praisingWrite() == true)
         {
@@ -109,7 +109,7 @@
             app_writeEnable_Request(obj, coreId);
         }
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeQue_Update(OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_writeQue_Update(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj)
     {
         for (uint8_t concurrenctThreadID = 0; concurrenctThreadID < obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_number_Of_Implemented_Threads(); concurrenctThreadID++)
         {
@@ -133,113 +133,113 @@
             }
         }
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_flag_praisingWrite(bool* newINITIALISED_bool)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_flag_praisingWrite(bool* newINITIALISED_bool)
     {
         stat_REG_dyn_REG_set_flag_praisingWrite(*newINITIALISED_bool);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_3STATE_flag_WriteSTATE(uint8_t concurrentThreadID, std::array<bool, 2>* newINITIALISED_boolList)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_3STATE_flag_WriteSTATE(uint8_t concurrentThreadID, std::array<bool, 2>* newINITIALISED_boolList)
     {
         stat_REG_set_Item_On_Of_3STATE_flag_WriteState(concurrentThreadID, *newINITIALISED_boolList);;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
     {
         stat_REG_set_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(concurrentThreadID, *newINITIALISED_uint32_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_WriteIDLE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_WriteIDLE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
     {
         stat_set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(concurrentThreadID, *newINITIALISED_uint32_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_WriteWAIT_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_list_Of_WriteWAIT_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t* newINITIALISED_uint32_t)
     {
         stat_REG_set_Item_On_list_Of_WriteWait_Count_For_ThreadId(concurrentThreadID, *newINITIALISED_uint32_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_new_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_new_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
     {
         stat_REG_set_new_writeCycle_Try_ThreadId_Index(*newINITIALISED_uint8_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t* newINITIALISED_uint8_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t* newINITIALISED_uint8_t)
     {
         stat_REG_set_Item_On_QUE_List_Of_ThreadToWrite(slotID, *newINITIALISED_uint8_t);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::app_REG_initialise_writeCycle_Try_ThreadId_Index(uint8_t* newINITIALISED_uint8_t)
     {
         stat_REG_set_writeCycle_Try_ThreadId_Index(*newINITIALISED_uint8_t);
     }
-    bool OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_flag_praisingWrite()
+    bool OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_flag_praisingWrite()
     {
         return *stat_REG_get_ptr_flag_praisingWrite();
     }
-    std::array<bool, 2> OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_2ibt_flag_WriteState(uint8_t concurrentThreadID)
+    std::array<bool, 2> OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_2ibt_flag_WriteState(uint8_t concurrentThreadID)
     {
         auto temp = stat_REG_get_ptr_list_Of_2ibt_flag_WriteState()->begin();
         std::advance(temp, concurrentThreadID);
         return *temp;
     }
-    uint32_t OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId(uint8_t concurrentThreadID)
+    uint32_t OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId(uint8_t concurrentThreadID)
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId()->begin();
         std::advance(temp, concurrentThreadID);
         return *temp;
     }
-    uint32_t OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId(uint8_t concurrentThreadID)
+    uint32_t OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId(uint8_t concurrentThreadID)
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId()->begin();
         std::advance(temp, concurrentThreadID);
         return *temp;
     }
-    uint32_t OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId(uint8_t concurrentThreadID)
+    uint32_t OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId(uint8_t concurrentThreadID)
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId()->begin();
         std::advance(temp, concurrentThreadID);
         return *temp;
     }
-    uint8_t OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_new_writeCycle_Try_ThreadId_Index()
+    uint8_t OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_new_writeCycle_Try_ThreadId_Index()
     {
         return *stat_REG_get_ptr_new_writeCycle_Try_ThreadId_Index();
     }
-    uint8_t OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_QUE_List_Of_ThreadToWrite(uint8_t slotID)
+    uint8_t OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_QUE_List_Of_ThreadToWrite(uint8_t slotID)
     {
         auto temp = stat_REG_get_ptr_QUE_List_Of_ThreadToWrite()->begin();
         std::advance(temp, slotID);
         return *temp;
     }
-    uint8_t OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_writeCycle_Try_ThreadId_Index()
+    uint8_t OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_get_ptr_writeCycle_Try_ThreadId_Index()
     {
         return *stat_REG_get_ptr_writeCycle_Try_ThreadId_Index();
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_flag_praisingWrite(bool newBoolValue)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_flag_praisingWrite(bool newBoolValue)
     {
         stat_REG_dyn_REG_set_flag_praisingWrite(newBoolValue);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_2ibt_flag_WriteState(uint8_t concurrentThreadID, std::array<bool, 2> new2bitState)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_2ibt_flag_WriteState(uint8_t concurrentThreadID, std::array<bool, 2> new2bitState)
     {
         stat_REG_set_Item_On_Of_3STATE_flag_WriteState(concurrentThreadID, new2bitState);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_WriteActive_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_WriteActive_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
     {
         stat_REG_set_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(concurrentThreadID, newCount);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
     {
         stat_set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(concurrentThreadID, newCount);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_WriteWait_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_list_Of_WriteWait_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
     {
         stat_REG_set_Item_On_list_Of_WriteWait_Count_For_ThreadId(concurrentThreadID, newCount);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_new_writeCycle_Try_ThreadId_Index(uint8_t newID)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_new_writeCycle_Try_ThreadId_Index(uint8_t newID)
     {
         stat_REG_set_writeCycle_Try_ThreadId_Index(newID);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t newID)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t newID)
     {
         stat_REG_set_Item_On_QUE_List_Of_ThreadToWrite(slotID, newID);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_writeCycle_Try_ThreadId_Index(uint8_t newID)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dyn_REG_set_writeCycle_Try_ThreadId_Index(uint8_t newID)
     {
         stat_REG_set_writeCycle_Try_ThreadId_Index(newID);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dynamicStagger(OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::dynamicStagger(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId)
     {
         if (*stat_REG_get_ptr_writeCycle_Try_ThreadId_Index() == coreId)
         {
@@ -254,7 +254,7 @@
             }
         }
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::writeEnable_ShiftQueValues(OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId_A, uint8_t coreId_B)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::writeEnable_ShiftQueValues(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework* obj, uint8_t coreId_A, uint8_t coreId_B)
     {
         int temp_A = int(0);
         temp_A = obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId(coreId_A);
@@ -274,125 +274,125 @@
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_Item_On_QUE_List_Of_ThreadToWrite(coreId_A, obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_ptr_QUE_List_Of_ThreadToWrite(coreId_B));
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_Item_On_QUE_List_Of_ThreadToWrite(coreId_B, temp_B);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_flag_praisingWrite(bool* newDEFAULT_bool)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_flag_praisingWrite(bool* newDEFAULT_bool)
     {
         _stat_REG_ptr_flag_praisingWrite = new bool(NULL);
         while (stat_REG_get_ptr_flag_praisingWrite() == NULL) {}
         *_stat_REG_ptr_flag_praisingWrite = *newDEFAULT_bool;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_2ibt_flag_WriteState(std::array<bool, 2>* newDEFAULT_boolList)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_2ibt_flag_WriteState(std::array<bool, 2>* newDEFAULT_boolList)
     {
         _stat_REG_LIST_Of_3STATE_flag_WriteState = new std::list<std::array<bool, 2>>(NULL);
         while (stat_REG_get_ptr_list_Of_2ibt_flag_WriteState() == NULL) {}
         *_stat_REG_LIST_Of_3STATE_flag_WriteState = { *newDEFAULT_boolList, *newDEFAULT_boolList, *newDEFAULT_boolList };
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_WriteActive_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_WriteActive_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t)
     {
         _stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = new std::list<uint32_t>{ NULL };
         while (stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId() == NULL) {}
         *_stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId = { *newDEFAULT_uint32_t, *newDEFAULT_uint32_t, *newDEFAULT_uint32_t };//NUMBER OF CONCURRENT THREADS
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_WriteIdle_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_WriteIdle_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t)
     {
         _stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = new std::list<uint32_t>(NULL);
         while (stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId() == NULL) {}
         *_stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId = { *newDEFAULT_uint32_t, *newDEFAULT_uint32_t, *newDEFAULT_uint32_t };//NUMBER OF CONCURRENT THREADS
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_WriteWait_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_list_Of_WriteWait_Count_For_ThreadId(uint32_t* newDEFAULT_uint32_t)
     {
         _stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = new std::list<uint32_t>(NULL);
         while (stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId() == NULL) {}
         *_stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId = { *newDEFAULT_uint32_t, *newDEFAULT_uint32_t, *newDEFAULT_uint32_t };//NUMBER OF CONCURRENT THREADS
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_new_writeCycle_Try_ThreadId_Index(uint8_t* newDEFAULT_uint8_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_new_writeCycle_Try_ThreadId_Index(uint8_t* newDEFAULT_uint8_t)
     {
         _stat_REG_new_writeCycle_Try_ThreadId_Index = new uint8_t(NULL);
         while (stat_REG_get_ptr_new_writeCycle_Try_ThreadId_Index() == NULL) {}
         *_stat_REG_new_writeCycle_Try_ThreadId_Index = *newDEFAULT_uint8_t;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_QUE_List_Of_ThreadToWrite(uint8_t* newDEFAULT_uint8_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_QUE_List_Of_ThreadToWrite(uint8_t* newDEFAULT_uint8_t)
     {
         _stat_REG_QUE_Of_ThreadID_To_WRITE = new std::list<uint8_t>(NULL);
         while (stat_REG_get_ptr_QUE_List_Of_ThreadToWrite() == NULL) {}
         *_stat_REG_QUE_Of_ThreadID_To_WRITE = { *newDEFAULT_uint8_t, *newDEFAULT_uint8_t, *newDEFAULT_uint8_t };//NUMBER OF CONCURRENT THREADS
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_writeCycle_Try_ThreadId_Index(uint8_t* newDEFAULT_uint8_t)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::state_REG_create_writeCycle_Try_ThreadId_Index(uint8_t* newDEFAULT_uint8_t)
     {
         _stat_REG_ptr_writeCycle_Try_ThreadId_Index = new uint8_t(NULL);
         while (stat_REG_get_ptr_writeCycle_Try_ThreadId_Index() == NULL) {}
         *_stat_REG_ptr_writeCycle_Try_ThreadId_Index = *newDEFAULT_uint8_t;
     }
-    bool* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_flag_praisingWrite()
+    bool* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_flag_praisingWrite()
     {
         return _stat_REG_ptr_flag_praisingWrite;
     }
-    std::list<std::array<bool, 2>>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_2ibt_flag_WriteState()
+    std::list<std::array<bool, 2>>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_2ibt_flag_WriteState()
     {
         return _stat_REG_LIST_Of_3STATE_flag_WriteState;
     }
-    std::list<uint32_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId()
+    std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId()
     {
         return _stat_REG_LIST_Of_WriteACTIVE_Count_For_ThreadId;
     }
-    std::list<uint32_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId()
+    std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId()
     {
         return _stat_REG_LIST_Of_WriteIDLE_Count_For_ThreadId;
     }
-    std::list<uint32_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId()
+    std::list<uint32_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId()
     {
         return _stat_REG_LIST_Of_WriteWAIT_Count_For_ThreadId;
     }
-    uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_new_writeCycle_Try_ThreadId_Index()
+    uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_new_writeCycle_Try_ThreadId_Index()
     {
         return _stat_REG_new_writeCycle_Try_ThreadId_Index;
     }
-    std::list<uint8_t>* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_QUE_List_Of_ThreadToWrite()
+    std::list<uint8_t>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_QUE_List_Of_ThreadToWrite()
     {
         return _stat_REG_QUE_Of_ThreadID_To_WRITE;
     }
-    uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_writeCycle_Try_ThreadId_Index()
+    uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_get_ptr_writeCycle_Try_ThreadId_Index()
     {
         return _stat_REG_ptr_writeCycle_Try_ThreadId_Index;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_dyn_REG_set_flag_praisingWrite(bool newFlag)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_dyn_REG_set_flag_praisingWrite(bool newFlag)
     {
         *_stat_REG_ptr_flag_praisingWrite = newFlag;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_Of_3STATE_flag_WriteState(uint8_t concurrentThreadID, std::array<bool, 2> new2bitState)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_Of_3STATE_flag_WriteState(uint8_t concurrentThreadID, std::array<bool, 2> new2bitState)
     {
         auto temp = stat_REG_get_ptr_list_Of_2ibt_flag_WriteState()->begin();
         std::advance(temp, concurrentThreadID);
         *temp = new2bitState;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_list_Of_WriteACTIVE_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId()->begin();
         std::advance(temp, concurrentThreadID);
         *temp = newCount;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_set_Item_On_list_Of_WriteIdle_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteIdle_Count_For_ThreadId()->begin();
         std::advance(temp, concurrentThreadID);
         *temp = newCount;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_list_Of_WriteWait_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_list_Of_WriteWait_Count_For_ThreadId(uint8_t concurrentThreadID, uint32_t newCount)
     {
         auto temp = stat_REG_get_ptr_list_Of_WriteWait_Count_For_ThreadId()->begin();
         std::advance(temp, concurrentThreadID);
         *temp = newCount;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_new_writeCycle_Try_ThreadId_Index(uint8_t newValue)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_new_writeCycle_Try_ThreadId_Index(uint8_t newValue)
     {
         *_stat_REG_new_writeCycle_Try_ThreadId_Index = newValue;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t concurrentThreadID)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_Item_On_QUE_List_Of_ThreadToWrite(uint8_t slotID, uint8_t concurrentThreadID)
     {
         auto temp = stat_REG_get_ptr_QUE_List_Of_ThreadToWrite()->begin();
         std::advance(temp, slotID);
         *temp = concurrentThreadID;
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_writeCycle_Try_ThreadId_Index(uint8_t newValue)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION_Control::stat_REG_set_writeCycle_Try_ThreadId_Index(uint8_t newValue)
     {
         *_stat_REG_ptr_writeCycle_Try_ThreadId_Index = newValue;
     }
