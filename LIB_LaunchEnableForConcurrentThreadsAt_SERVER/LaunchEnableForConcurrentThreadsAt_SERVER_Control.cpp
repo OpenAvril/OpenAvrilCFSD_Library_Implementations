@@ -1,5 +1,4 @@
 #include "pch.h"
-
 uint8_t* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::_stat_REG_ptr_concurrentCycle_Try_CoreId_Index = NULL;
 bool* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::_stat_REG_ptr_flag_praisinglaunch = NULL;
 std::list<uint32_t>* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::_stat_REG_ptr_list_Of_launchActive_Count_For_ThreadID = NULL;
@@ -10,14 +9,17 @@ uint8_t* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForC
 OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::LaunchEnableForConcurrentThreadsAt_SERVER_Control()
 {
     bool* newDEFAULT_Flagbit1 = new bool(true);
+    while (newDEFAULT_Flagbit1 == NULL) {}
     stat_REG_create_flag_praisinglaunch(newDEFAULT_Flagbit1);
     delete newDEFAULT_Flagbit1;
     uint32_t* newDEFAULT_uint32_t = new uint32_t(UINT32_MAX);
+    while (newDEFAULT_uint32_t == NULL) {}
     stat_REG_create_list_Of_launchActive_Count_For_ThreadID(newDEFAULT_uint32_t);
     stat_REG_create_list_Of_launchIdle_Count_For_ThreadID(newDEFAULT_uint32_t);
     delete newDEFAULT_uint32_t;
-    stat_REG_create_list_for_Que_Of_CoreTolaunch();
+    stat_REG_create_list_for_Que_Of_CoreTolaunch();//todo
     uint8_t* newDEFAULT_int8_t = new uint8_t(INT8_MAX);
+    while (newDEFAULT_int8_t == NULL) {}
     stat_REG_create_concurrentCycle_Try_CoreId_Index(newDEFAULT_int8_t);
     stat_REG_create_new_concurrentCycle_Try_CoreId_Index(newDEFAULT_int8_t);
     delete newDEFAULT_int8_t;
@@ -32,11 +34,11 @@ OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrent
     delete _stat_REG_ptr_list_Of_STATE_For_ConcurrentCore;
     delete _stat_REG_ptr_list_for_Que_Of_CoreTolaunch;
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::launchEnable_Activate(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::app_launchEnable_Activate(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj)
 {
     obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->set_Item_On_list_Of_STATE_For_ConcurrentCore(obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->dyn_REG_get_Item_On_list_Of_STATE_For_ConcurrentCore(0), obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_ptr_flag_thread_2STATE_ACTIVE());
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::launchEnable_Request(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrentThreadID)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::app_launchEnable_Request(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrentThreadID)
 {
     while (obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->dyn_REG_get_Item_On_list_Of_STATE_For_ConcurrentCore(dyn_REG_get_Item_On_list_for_Que_Of_CoreTolaunch(0)) != obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_ptr_flag_thread_2STATE_IDLE())
     {
@@ -60,10 +62,10 @@ void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcu
             obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->set_new_concurrentCycle_Try_CoreId_Index(0);
         }
         obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->set_flag_praisinglaunch(false);
-        obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->launchEnable_Request(obj, concurrentThreadID);
+        obj->dyn_CLASS_get_ptr_LaunchConcurrency()->dyn_CLASS_get_ptr_LaunchConcurrency_Control()->app_launchEnable_Request(obj, concurrentThreadID);
     }
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::launchEnable_SortQue(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::app_launchEnable_SortQue(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads)
 {
     for (uint8_t index_A = 0; index_A < number_Implemented_Threads - 2; index_A++)
     {
@@ -95,7 +97,7 @@ void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcu
         }
     }
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::launchQue_Update(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::app_launchQue_Update(OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t number_Implemented_Threads)
 {
     for (uint8_t index = 0; index < number_Implemented_Threads; index++)
     {
@@ -200,12 +202,6 @@ void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcu
     std::advance(temp, concurrenctThreadID);
     *temp = newValue;
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::set_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t newValue)
-{
-    auto temp = stat_REG_get_ptr_list_Of_launchIdle_Count_For_ThreadID()->begin();
-    std::advance(temp, concurrenctThreadID);
-    *temp = newValue;
-}
 void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::set_Item_On_list_Of_STATE_For_ConcurrentCore(uint8_t concurrenct_threadID, bool newState)
 {
     auto temp = stat_REG_get_ptr_list_Of_STATE_For_ConcurrentCore()->begin();
@@ -300,7 +296,7 @@ void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcu
 {
     _stat_REG_ptr_list_for_Que_Of_CoreTolaunch = new std::list<uint8_t>(NULL);
     while (stat_REG_get_ptr_List_QUE_Of_CoreTolaunch() == NULL) {}
-    *_stat_REG_ptr_list_Of_STATE_For_ConcurrentCore = { NULL, NULL, NULL };//NUMBEROF CONCURRENT THREADS
+    *_stat_REG_ptr_list_for_Que_Of_CoreTolaunch = { NULL, NULL, NULL };//NUMBEROF CONCURRENT THREADS
     for (uint8_t concurrentThreadID = 0; concurrentThreadID < sizeof(*stat_REG_get_ptr_List_QUE_Of_CoreTolaunch()); concurrentThreadID++)
     {
         stat_REG_set_Item_On_list_for_Que_Of_CoreTolaunch(concurrentThreadID, concurrentThreadID);
@@ -371,6 +367,12 @@ void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcu
     auto temp = stat_REG_get_ptr_List_QUE_Of_CoreTolaunch()->begin();
     std::advance(temp, slot);
     *temp = concurrenct_threadID;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::set_Item_On_list_Of_launchIdle_Count_For_ThreadID(uint8_t concurrenctThreadID, uint32_t newValue)
+{
+    auto temp = stat_REG_get_ptr_list_Of_launchIdle_Count_For_ThreadID()->begin();
+    std::advance(temp, concurrenctThreadID);
+    *temp = newValue;
 }
 void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Control::stat_REG_set_new_concurrentCycle_Try_CoreId_Index(uint32_t newValue)
 {

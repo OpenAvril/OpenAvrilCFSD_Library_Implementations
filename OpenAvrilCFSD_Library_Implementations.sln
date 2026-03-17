@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.37012.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_LaunchEnableForConcurrentThreadsAt_CLIENT", "LIB_LaunchEnableForConcurrentThreadsAt_CLIENT\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.vcxproj", "{4025C3C6-0F15-4266-B9A8-FB14AE4E1C81}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_LaunchEnableForConcurrentThreadsAt_SERVER", "LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.vcxproj", "{D328B373-9D5A-4B6C-8E49-94C0951F166E}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE", "LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.vcxproj", "{CEB71245-997E-4AFE-9AB2-2D12678FFA1A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_WriteEnableForThreadsAt_SERVERINPUTACTION", "LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.vcxproj", "{829E9E7A-C169-41C8-963A-EB5E6C256C26}"
@@ -14,6 +12,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE", "LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.vcxproj", "{52D011AA-DC94-4FCB-B88C-3A5F6F01308E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION", "LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION.vcxproj", "{099856AD-7B8F-49F1-AD4C-51CDAC163C6E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_LaunchEnableForConcurrentThreadsAt_SERVER", "LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.vcxproj", "{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,6 @@ Global
 		{4025C3C6-0F15-4266-B9A8-FB14AE4E1C81}.Release|x64.Build.0 = Release|x64
 		{4025C3C6-0F15-4266-B9A8-FB14AE4E1C81}.Release|x86.ActiveCfg = Release|Win32
 		{4025C3C6-0F15-4266-B9A8-FB14AE4E1C81}.Release|x86.Build.0 = Release|Win32
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Debug|x64.ActiveCfg = Debug|x64
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Debug|x64.Build.0 = Debug|x64
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Debug|x86.ActiveCfg = Debug|Win32
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Debug|x86.Build.0 = Debug|Win32
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Release|x64.ActiveCfg = Release|x64
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Release|x64.Build.0 = Release|x64
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Release|x86.ActiveCfg = Release|Win32
-		{D328B373-9D5A-4B6C-8E49-94C0951F166E}.Release|x86.Build.0 = Release|Win32
 		{CEB71245-997E-4AFE-9AB2-2D12678FFA1A}.Debug|x64.ActiveCfg = Debug|x64
 		{CEB71245-997E-4AFE-9AB2-2D12678FFA1A}.Debug|x64.Build.0 = Debug|x64
 		{CEB71245-997E-4AFE-9AB2-2D12678FFA1A}.Debug|x86.ActiveCfg = Debug|Win32
@@ -71,6 +63,14 @@ Global
 		{099856AD-7B8F-49F1-AD4C-51CDAC163C6E}.Release|x64.Build.0 = Release|x64
 		{099856AD-7B8F-49F1-AD4C-51CDAC163C6E}.Release|x86.ActiveCfg = Release|Win32
 		{099856AD-7B8F-49F1-AD4C-51CDAC163C6E}.Release|x86.Build.0 = Release|Win32
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Debug|x64.ActiveCfg = Debug|x64
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Debug|x64.Build.0 = Debug|x64
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Debug|x86.ActiveCfg = Debug|Win32
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Debug|x86.Build.0 = Debug|Win32
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Release|x64.ActiveCfg = Release|x64
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Release|x64.Build.0 = Release|x64
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Release|x86.ActiveCfg = Release|Win32
+		{FD0C600A-DA2D-4A4A-BA8A-D3A1E5DB9C82}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,11 +6,13 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT
     public:
         LaunchEnableForConcurrentThreadsAt_CLIENT_Global();
         ~LaunchEnableForConcurrentThreadsAt_CLIENT_Global();
-        void dyn_initialise_flag_core_ACTIVE(bool* newINISIALISED_Flag);
-        void dyn_initialise_number_Implemented_Threads(uint8_t* newINISIALISED_Value);
+        void app_initialise_flag_core_ACTIVE(bool* newINISIALISED_Flag);
+        void app_initialise_number_Implemented_Threads(uint8_t* newINISIALISED_Value);
         bool dyn_REG_get_ptr_flag_thread_2STATE_ACTIVE();
         bool dyn_REG_get_ptr_flag_thread_2STATE_IDLE();
         uint8_t dyn_REG_get_number_Implemented_Threads();
+        static unsigned char* stat_uint8_t_to_ByteArray(uint8_t uint8_t_Value);
+        static uint8_t stat_ByteArray_to_uint8_t(unsigned char* bytes);
         static class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* stat_obj_get_ClassOf(void* obj);
     private:
         static bool* _stat_REG_ptr_flag_thread_2STATE;

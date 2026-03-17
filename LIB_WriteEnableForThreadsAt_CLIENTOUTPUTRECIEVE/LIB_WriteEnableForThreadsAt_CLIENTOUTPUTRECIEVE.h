@@ -10,36 +10,13 @@ extern "C"
 		class LIBWRITEENABLEFORTHREADSATCLIENTOUTPUTRECIEVE_API CLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE
 		{
 		public:
-// public.
-	// constructor.
-			CLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE();
-
-	// destructor.
-
-	// dynamic.
 			static void* generate_Program();
 			static void terminate_Program();
-			static void write_End(void*, uint8_t coreId);
-			static void write_Start(void*, uint8_t coreId);
-		// get.
-		// set.
-	// static.
-		// get.
-		// set.
-
+			static void write_End(void*, unsigned char* bytes);
+			static void write_Start(void*, unsigned char* bytes);
 		private:
-// private.
-	// dynamic.
-		// get.
-		// set.
-	// static.
 			static void stat_create_Framework();
-		// get.
 			static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* stat_get_ptr_Framework();
-		// set.
-	// pointers.
-		// classes.
-		// registers.
 		};
 	}
 }

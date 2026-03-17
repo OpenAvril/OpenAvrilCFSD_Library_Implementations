@@ -1,15 +1,8 @@
 #include "pch.h"
-
-// pointers.
-    // classes.
-    // registers.
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::_REG_ptr_3STATE_flag_IDLE = NULL;
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::_REG_ptr_3STATE_flag_WAIT = NULL;
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::_REG_ptr_3STATE_flag_WRITE = NULL;
     uint8_t* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::_REG_ptr_number_Of_Implemented_Threads = NULL;
-
-// public.
-    // constructor.
     OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::WriteEnableForThreadsAt_SERVERINPUTACTION_Global()
     {
         std::array<bool, 2>* newDEAFULT_FlagSet = new std::array<bool, 2>{true, true};
@@ -21,8 +14,6 @@
         stat_REG_create_number_Of_Implemented_Threads(newDEFAULT_Value);
         delete newDEFAULT_Value;
     }
-
-    // destructor.
     OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::~WriteEnableForThreadsAt_SERVERINPUTACTION_Global()
     {
         delete _REG_ptr_3STATE_flag_IDLE;
@@ -30,26 +21,22 @@
         delete _REG_ptr_3STATE_flag_WRITE;
         delete _REG_ptr_number_Of_Implemented_Threads;
     }
-
-    // dynamic.
-    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::dyn_REG_initialise_Item_Of_ptr_3STATE_flag_IDLE(std::array<bool, 2>* newINITIALISED_FlagBits)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::app_REG_initialise_Item_Of_ptr_3STATE_flag_IDLE(std::array<bool, 2>* newINITIALISED_FlagBits)
     {
         stat_REG_set_3STATE_flag_IDLE(*newINITIALISED_FlagBits);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::dyn_REG_initialise_Item_Of_ptr_3STATE_flag_WAIT(std::array<bool, 2 >* newINITIALISED_FlagBits)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::app_REG_initialise_Item_Of_ptr_3STATE_flag_WAIT(std::array<bool, 2 >* newINITIALISED_FlagBits)
     {
         stat_REG_set_3STATE_flag_IDLE(*newINITIALISED_FlagBits);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::dyn_REG_initialise_Item_Of_ptr_3STATE_flag_WRITE(std::array<bool, 2 >* newINITIALISED_FlagBits)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::app_REG_initialise_Item_Of_ptr_3STATE_flag_WRITE(std::array<bool, 2 >* newINITIALISED_FlagBits)
     {
         stat_REG_set_3STATE_flag_WRITE(*newINITIALISED_FlagBits);
     }
-    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::dyn_REG_initialise_Ptr_number_Of_Implemented_Threads(uint8_t* newValue)
+    void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::app_REG_initialise_Ptr_number_Of_Implemented_Threads(uint8_t* newValue)
     {
         stat_REG_set_number_Of_Implemented_Threads(*newValue);
     }
-        // create.    
-        // get.
     std::array<bool, 2> OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::dyn_REG_get_3STATE_flag_IDLE()
     {
         return *stat_REG_get_ptr_3STATE_flag_IDLE();
@@ -66,33 +53,22 @@
     {
         return *stat_REG_get_ptr_number_Of_Implemented_Threads();
     }
-        // set.
-    // static.
-        // create.
-        // get.
-    OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::stat_OBJ_get_ClassOf(void* obj)
+    uint8_t OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::stat_CONVERT_ByteArray_to_uint8_t(unsigned char* bytes)
+    {
+        uint8_t cpp_uint8_t_value;
+        std::memcpy(&cpp_uint8_t_value, bytes, sizeof(cpp_uint8_t_value));
+        return cpp_uint8_t_value;
+    }
+    OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::stat_CONVERT_ObjPtr_to_Class(void* obj)
     {
         return reinterpret_cast<OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework*>(obj);
     }
-        // set.
-
-// private.
-    // dynamic.
-        // classes.
-            // create.
-            // get.
-            // set.
-        // registers.
-            // create.
-            // get.
-            // set.
-    // static.
-        // classes.
-            // create.
-            // get.
-            // set.
-        // registers.
-            // create.
+    unsigned char* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::stat_CONVERT_uint8_t_to_ByteArray(uint8_t uint8_t_Value)
+    {
+        unsigned char* bytes_array;
+        std::memcpy(&bytes_array, &uint8_t_Value, sizeof(uint8_t_Value));
+        return bytes_array;
+    }
     void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::stat_REG_create_3STATE_flag_IDLE(std::array<bool, 2>* newDEAFULT_FlagSet)
     {
         _REG_ptr_3STATE_flag_IDLE = new std::array<bool, 2>;
@@ -117,7 +93,6 @@
         while (stat_REG_get_ptr_number_Of_Implemented_Threads() == NULL) {}
         *_REG_ptr_number_Of_Implemented_Threads = *newDEFAULT_Value;
     }
-            // get.
     std::array<bool, 2>* OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::stat_REG_get_ptr_3STATE_flag_IDLE()
     {
         return _REG_ptr_3STATE_flag_IDLE;
@@ -134,7 +109,6 @@
     {
         return _REG_ptr_number_Of_Implemented_Threads;
     }
-            // set.
     void OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Global::stat_REG_set_3STATE_flag_IDLE(std::array<bool, 2> new_FlagBitSet)
     {
         *_REG_ptr_3STATE_flag_IDLE = new_FlagBitSet;

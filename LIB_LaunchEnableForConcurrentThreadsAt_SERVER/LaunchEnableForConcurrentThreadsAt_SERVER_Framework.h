@@ -6,7 +6,7 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
     public:
         LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
         virtual ~LaunchEnableForConcurrentThreadsAt_SERVER_Framework();
-        void dyn_initialise(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
+        void app_initialise(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
         class LaunchEnableForConcurrentThreadsAt_SERVER* dyn_CLASS_get_ptr_LaunchConcurrency();
         static class LaunchEnableForConcurrentThreadsAt_SERVER* stat_CLASS_get_ptr_LaunchConcurrency();
     private:
