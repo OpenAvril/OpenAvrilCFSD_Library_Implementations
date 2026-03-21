@@ -1,79 +1,138 @@
 #include "pch.h"
-bool* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::_stat_REG_ptr_flag_thread_2STATE = NULL;
-uint8_t* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::_stat_REG_ptr_number_Implemented_Threads = NULL;
+std::array<bool, 3>* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::_stat_REG_ptr_flag_thread_2STATE;
+uint8_t* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::_stat_REG_ptr_number_Implemented_Threads;
 OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::LaunchEnableForConcurrentThreadsAt_CLIENT_Global()
 {
-    bool* newDEFAULT_Flag = new bool(true);
-    stat_REG_create_flag_thread_STATE(newDEFAULT_Flag);
-    delete newDEFAULT_Flag;
-    uint8_t* newDEFAULT_Value = new uint8_t(INT8_MAX);
-    stat_REG_create_number_Implemented_Threads(newDEFAULT_Value);
-    delete newDEFAULT_Value;
+    boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global();
+    boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global();
+    boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global();
+    boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global();
 }
 OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::~LaunchEnableForConcurrentThreadsAt_CLIENT_Global()
 {
     delete _stat_REG_ptr_flag_thread_2STATE;
     delete _stat_REG_ptr_number_Implemented_Threads;
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::app_initialise_flag_core_ACTIVE(bool* newINISIALISED_Flag)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()
 {
-    stat_REG_set_flag_thread_2STATE_ACTIVE(*newINISIALISED_Flag);
+    std::cout << "entered boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
+
+    std::cout << "exiting boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::app_initialise_number_Implemented_Threads(uint8_t* newINISIALISED_Value)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global()
 {
-    stat_REG_set_number_Implemented_Threads(*newINISIALISED_Value);
+    std::cout << "entered boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
+
+    std::cout << "exiting boot1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Global()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global()
+{
+    std::cout << "entered boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+
+    std::cout << "exiting boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()
+{
+    std::cout << "entered boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+
+    std::cout << "exiting boot0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global()
+{
+    std::cout << "entered boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+    stat_REG_boot1_DEFINE_flag_thread_2STATE();
+    stat_REG_boot1_DEFINE_number_Implemented_Threads();
+    std::cout << "exiting boot1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Global()
+{
+    std::cout << "entered boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+    stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE();
+    stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads();
+    std::cout << "exiting boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Global()
+{
+    std::cout << "entered boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+    stat_REG_boot3_INITIALISE_flag_thread_2STATE();
+    stat_REG_boot3_INITIALISE_number_Implemented_Threads();
+    std::cout << "exiting boot3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Global()" << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::boot4_PGM_INSTANTIATE_WriteEnableForThreadsAt_STACK_Global()
+{
+
 }
 bool OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::dyn_REG_get_ptr_flag_thread_2STATE_ACTIVE()
 {
-    return *stat_REG_get_ptr_flag_thread_2STATE();
+    return stat_REG_get_ptr_flag_thread_2STATE();
 }
 bool OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::dyn_REG_get_ptr_flag_thread_2STATE_IDLE()
 {
-    return !*stat_REG_get_ptr_flag_thread_2STATE();
+    return !stat_REG_get_ptr_flag_thread_2STATE();
 }
 uint8_t OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::dyn_REG_get_number_Implemented_Threads()
 {
-    return *stat_REG_get_number_Implemented_Threads();
+    return *stat_REG_get_ptr_number_Implemented_Threads();
 }
-unsigned char* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_uint8_t_to_ByteArray(uint8_t uint8_t_Value)
+unsigned char* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_CONVERT_uint8_t_To_ByteArray(uint8_t uint8_t_Value)
 {
     unsigned char* bytes_array;
     std::memcpy(&bytes_array, &uint8_t_Value, sizeof(uint8_t_Value));
     return bytes_array;
 }
-uint8_t OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_ByteArray_to_uint8_t(unsigned char* bytes)
+uint8_t OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_CONVERT_ByteArray_To_uint8_t(unsigned char* bytes)
 {
     uint8_t cpp_uint8_t_value;
     std::memcpy(&cpp_uint8_t_value, bytes, sizeof(cpp_uint8_t_value));
     return cpp_uint8_t_value;
 }
-OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_obj_get_ClassOf(void* obj)
+OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_CONVERT_Obj_To_ClassOf(void* obj)
 {
     return reinterpret_cast<OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Framework*>(obj);
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_create_flag_thread_STATE(bool* newDEFAULT_Flag)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_boot1_DEFINE_flag_thread_2STATE()
 {
-    _stat_REG_ptr_flag_thread_2STATE = new bool(NULL);
+    _stat_REG_ptr_flag_thread_2STATE = NULL;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_boot1_DEFINE_number_Implemented_Threads()
+{
+    _stat_REG_ptr_number_Implemented_Threads = NULL;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()
+{
+    std::cout << "entered stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
+    _stat_REG_ptr_flag_thread_2STATE = new std::array<bool, 3>();
     while (stat_REG_get_ptr_flag_thread_2STATE() == NULL) {}
-    *_stat_REG_ptr_flag_thread_2STATE = *newDEFAULT_Flag;
+    *_stat_REG_ptr_flag_thread_2STATE = { true, true, true };
+    std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_flag_thread_2STATE()" << std::endl;
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_create_number_Implemented_Threads(uint8_t* newDEFAULT_Value)
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()
 {
-    _stat_REG_ptr_number_Implemented_Threads = new uint8_t(NULL);
-    while (stat_REG_get_number_Implemented_Threads() == NULL) {}
-    *_stat_REG_ptr_number_Implemented_Threads = *newDEFAULT_Value;
+    std::cout << "entered stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
+    _stat_REG_ptr_number_Implemented_Threads = new uint8_t(UINT8_MAX);
+    std::cout << "exiting stat_REG_boot2_SUBSTANTIATE_number_Implemented_Threads()" << std::endl;
 }
-uint8_t* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_get_number_Implemented_Threads()
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_boot3_INITIALISE_flag_thread_2STATE()
 {
-    return _stat_REG_ptr_number_Implemented_Threads;
+    std::cout << "entered stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
+    *_stat_REG_ptr_flag_thread_2STATE = { false, false, false };
+    std::cout << "exiting stat_REG_boot3_INITIALISE_flag_thread_2STATE()" << std::endl;
 }
-bool* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_get_ptr_flag_thread_2STATE()
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_boot3_INITIALISE_number_Implemented_Threads()
+{
+    _stat_REG_ptr_number_Implemented_Threads = new uint8_t(UINT8_MAX);
+}
+std::array<bool, 3>* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_get_ptr_flag_thread_2STATE()
 {
     return _stat_REG_ptr_flag_thread_2STATE;
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_set_flag_thread_2STATE_ACTIVE(bool flag_coreSTATE_Id)
+uint8_t* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_get_ptr_number_Implemented_Threads()
 {
-    *_stat_REG_ptr_flag_thread_2STATE = flag_coreSTATE_Id;
+    return _stat_REG_ptr_number_Implemented_Threads;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_set_flag_thread_2STATE_ACTIVE(std::array<bool, 3>* bitArray)
+{
+    *_stat_REG_ptr_flag_thread_2STATE = *bitArray;
 }
 void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global::stat_REG_set_number_Implemented_Threads(uint8_t number_Implemented_Threads)
 {

@@ -1,9 +1,12 @@
 #include "pch.h"
-OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::_stat_CLASS_ptr_Global = NULL;
-OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Control* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::_stat_CLASS_ptr_LaunchConcurrency_Control = NULL;
+OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::_stat_CLASS_ptr_Global;
+OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Control* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::_stat_CLASS_ptr_LaunchConcurrency_Control;
 OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT()
 {
-    stat_CLASS_create_ptr_Global();
+    boot0_CLASS_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT();
+    boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_CLIENT();
+    boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_CLIENT();
+    boot0_REG_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT();
 }
 OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::~LaunchEnableForConcurrentThreadsAt_CLIENT()
 {
@@ -44,9 +47,55 @@ void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcu
         obj->dyn_CLASS_get_ptr_LaunchConcurrency()->app_thread_End(obj, concurrentThreadID);
     }
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::app_initialise_Control()
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot0_CLASS_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT()
 {
-    stat_CLASS_create_ptr_LaunchConcurrency_Control();
+	std::cout << "entered boot0_CLASS_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+
+	std::cout << "exiting boot0_CLASS_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_CLIENT()
+{
+	std::cout << "entered boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+    stat_CLASS_boot1_DEFINE_Global();
+    stat_CLASS_boot1_DEFINE_WriteEnable_Control();
+	std::cout << "exiting boot1_CLASS_DEFINE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_CLIENT()
+{
+	std::cout << "entered boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+    stat_CLASS_boot3_INITIALISE_Global();
+    stat_CLASS_boot3_INITIALISE_LaunchConcurrency_Control();
+	std::cout << "exiting boot3_CLASS_INITIALISE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot0_REG_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT()
+{
+	std::cout << "entered boot0_REG_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+
+	std::cout << "exiting boot0_REG_DECLAIRE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_CLIENT()
+{
+	std::cout << "entered boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+    
+	std::cout << "exiting boot1_REG_DEFINE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_CLIENT()
+{
+	std::cout << "entered boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+
+	std::cout << "exiting boot2_REG_SUBSTANTIATE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_CLIENT()
+{
+	std::cout << "entered boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+
+	std::cout << "exiting boot3_REG_INITIALISE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::boot4_PGM_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_CLIENT()
+{
+	std::cout << "entered boot4_PGM_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
+
+	std::cout << "exiting boot4_PGM_INSTANTIATE_LaunchEnableForConcurrentThreadsAt_CLIENT()." << std::endl;
 }
 OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::dyn_CLASS_get_ptr_Global()
 {
@@ -56,15 +105,23 @@ OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrent
 {
     return stat_CLASS_get_ptr_LaunchConcurrency_Control();
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::stat_CLASS_create_ptr_Global()
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::stat_CLASS_boot1_DEFINE_Global()
 {
-    _stat_CLASS_ptr_Global = new class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global();
-    while (stat_CLASS_get_ptr_Global() == NULL) {}
+    _stat_CLASS_ptr_Global = NULL;
 }
-void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::stat_CLASS_create_ptr_LaunchConcurrency_Control()
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::stat_CLASS_boot1_DEFINE_WriteEnable_Control()
 {
-    _stat_CLASS_ptr_LaunchConcurrency_Control = new class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Control();
-    while (stat_CLASS_get_ptr_LaunchConcurrency_Control() == NULL) {}
+    _stat_CLASS_ptr_LaunchConcurrency_Control = NULL;
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::stat_CLASS_boot3_INITIALISE_Global()
+{
+    _stat_CLASS_ptr_Global = new OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global();
+    while (stat_CLASS_get_ptr_Global() == NULL) { }
+}
+void OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::stat_CLASS_boot3_INITIALISE_LaunchConcurrency_Control()
+{
+    _stat_CLASS_ptr_LaunchConcurrency_Control = new OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Control();
+    while (stat_CLASS_get_ptr_LaunchConcurrency_Control() == NULL) { }
 }
 OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT_Global* OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT::LaunchEnableForConcurrentThreadsAt_CLIENT::stat_CLASS_get_ptr_Global()
 {

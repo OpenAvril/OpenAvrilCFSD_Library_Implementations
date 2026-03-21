@@ -3,35 +3,81 @@
     class OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Control* OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::_stat_CLASS_ptr_WriteEnable_Control = NULL;
     OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()
     {
-        stat_CLASS_create_ptr_Global();
+        boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE();
+        boot1_CLASS_DEFINE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE();
+        boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE();
     }
     OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::~WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()
     {
         delete _stat_CLASS_ptr_Global;
         delete _stat_CLASS_ptr_WriteEnable_Control;
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::app_initialise_Control(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj)
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()
     {
-        obj->dyn_CLASS_get_ptr_WriteEnable()->stat_CLASS_create_ptr_WriteEnable_Control();
+        std::cout << "entered boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+
+        std::cout << "exiting boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::dyn_write_End(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot1_CLASS_DEFINE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()
+    {
+        std::cout << "entered boot1_CLASS_DEFINE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE" << std::endl;
+        stat_CLASS_boot1_DEFINE_Global();
+        stat_CLASS_boot1_DEFINE_WriteEnable_Control();
+        std::cout << "exiting boot1_CLASS_DEFINE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()
+    {
+        std::cout << "entered boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+        stat_CLASS_boot3_INITIALISE_Global();
+        stat_CLASS_boot3_INITIALISE_WriteEnable_Control();
+        std::cout << "exiting boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot0_REG_DECLAIRE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()
+    {
+        std::cout << "entered boot0_REG_DECLAIRE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+
+        std::cout << "exiting boot0_REG_DECLAIRE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot1_REG_DEFINE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj)
+    {
+        std::cout << "entered boot1_REG_DEFINE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+
+        std::cout << "exiting boot1_REG_DEFINE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj)
+    {
+        std::cout << "entered boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+
+        std::cout << "exiting boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot3_REG_INITIALISE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj)
+    {
+        std::cout << "entered boot3_REG_INITIALISE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+
+        std::cout << "exiting boot3_REG_INITIALISE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE()" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::boot4_PGM_INSTANTIATE_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj)
+    {
+        //if thread primed and system initialised, exit, else wait.
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::dyn_app_FUNCT_write_End(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
     {
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_Item_On_list_Of_2ibt_flag_WriteState(coreId, obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_Global()->dyn_REG_get_3STATE_flag_IDLE());
-        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_new_writeCycle_Try_ThreadId_Index(obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_ptr_list_Of_WriteActive_Count_For_ThreadId(coreId) + 1);
-        if (obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_ptr_new_writeCycle_Try_ThreadId_Index() == 3)
+        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_new_writeCycle_Try_ThreadId_Index(obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_Item_On_list_Of_WriteActive_Count_For_ThreadId(coreId) + 1);
+        if (obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_get_Item_new_writeCycle_Try_ThreadId_Index() == 3)
         {
             obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_new_writeCycle_Try_ThreadId_Index(0);
         }
-        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_writeQue_Update(obj);
-        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_writeEnable_SortQue(obj);
+        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_FUNCT_writeQue_Update(obj);
+        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_FUNCT_writeEnable_SortQue(obj);
         obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->dyn_REG_set_flag_praisingWrite(false);
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::dyn_write_Start(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::dyn_app_FUNCT_write_Start(OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t coreId)
     {
-        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_writeEnable_Request(obj, coreId);
-        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_writeQue_Update(obj);
-        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_writeEnable_SortQue(obj);
-        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_writeEnable_Activate(obj, coreId);
+        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_FUNCT_writeEnable_Request(obj, coreId);
+        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_FUNCT_writeQue_Update(obj);
+        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_FUNCT_writeEnable_SortQue(obj);
+        obj->dyn_CLASS_get_ptr_WriteEnable()->dyn_CLASS_get_ptr_WriteEnable_Control()->app_FUNCT_writeEnable_Activate(obj, coreId);
     }
     OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global* OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::dyn_CLASS_get_ptr_Global()
     {
@@ -41,12 +87,20 @@
     {
         return stat_CLASS_get_ptr_WriteEnable_Control();
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::stat_CLASS_create_ptr_Global()
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::stat_CLASS_boot1_DEFINE_Global()
+    {
+        _stat_CLASS_ptr_Global = NULL;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::stat_CLASS_boot1_DEFINE_WriteEnable_Control()
+    {
+        _stat_CLASS_ptr_WriteEnable_Control = NULL;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::stat_CLASS_boot3_INITIALISE_Global()
     {
         _stat_CLASS_ptr_Global = new class OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global();
         while (stat_CLASS_get_ptr_Global() == NULL) {}
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::stat_CLASS_create_ptr_WriteEnable_Control()
+    void OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE::stat_CLASS_boot3_INITIALISE_WriteEnable_Control()
     {
         _stat_CLASS_ptr_WriteEnable_Control = new class OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Control();
         while (stat_CLASS_get_ptr_WriteEnable_Control() == NULL) {}

@@ -5,14 +5,10 @@
     uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::_REG_ptr_number_Of_Implemented_Threads = NULL;
     OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()
     {
-        std::array<bool, 2>* newDEAFULT_FlagSet = new std::array<bool, 2>{true, true};
-        stat_REG_create_3STATE_flag_IDLE(newDEAFULT_FlagSet);
-        stat_REG_create_3STATE_flag_WAIT(newDEAFULT_FlagSet);//
-        stat_REG_create_3STATE_flag_WRITE(newDEAFULT_FlagSet);
-        delete newDEAFULT_FlagSet;
-        uint8_t* newDEFAULT_Value = new uint8_t(UINT8_MAX);
-        stat_REG_create_number_Of_Implemented_Threads(newDEFAULT_Value);
-        delete newDEFAULT_Value;
+        boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global();
+        boot1_CLASS_DEFINE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global();
+        boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global();
+        boot0_REG_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global();
     }
     OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::~WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()
     {
@@ -21,21 +17,59 @@
         delete _REG_ptr_3STATE_flag_WRITE;
         delete _REG_ptr_number_Of_Implemented_Threads;
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::app_REG_initialise_Item_Of_ptr_3STATE_flag_IDLE(std::array<bool, 2>* newINITIALISED_FlagBits)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()
     {
-        stat_REG_set_3STATE_flag_IDLE(*newINITIALISED_FlagBits);
+        std::cout << "entered boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
+
+        std::cout << "exiting boot0_CLASS_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::app_REG_initialise_Item_Of_ptr_3STATE_flag_WAIT(std::array<bool, 2 >* newINITIALISED_FlagBits)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot1_CLASS_DEFINE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()
     {
-        stat_REG_set_3STATE_flag_IDLE(*newINITIALISED_FlagBits);
+        std::cout << "entered boot1_CLASS_DEFINE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
+
+        std::cout << "exiting boot1_CLASS_DEFINE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global9)." << std::endl;
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::app_REG_initialise_Item_Of_ptr_3STATE_flag_WRITE(std::array<bool, 2 >* newINITIALISED_FlagBits)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()
     {
-        stat_REG_set_3STATE_flag_WRITE(*newINITIALISED_FlagBits);
+        std::cout << "entered boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
+
+        std::cout << "exiting boot3_CLASS_INITIALISE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::app_REG_initialise_Ptr_number_Of_Implemented_Threads(uint8_t* newValue)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot0_REG_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()
     {
-        stat_REG_set_number_Of_Implemented_Threads(*newValue);
+        std::cout << "entered boot0_REG_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
+
+        std::cout << "exiting boot0_REG_DECLAIRE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot1_REG_DEFINE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* obj)
+    {
+        std::cout << "entered boot1_REG_DEFINE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
+        stat_REG_boot1_DEFINE_ptr_3STATE_flag_IDLE();
+        stat_REG_boot1_DEFINE_ptr_3STATE_flag_WAIT();
+        stat_REG_boot1_DEFINE_ptr_3STATE_flag_WRITE();
+        stat_REG_boot1_DEFINE_ptr_number_Of_Implemented_Threads();
+        std::cout << "exiting boot1_REG_DEFINE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()." << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* obj)
+    {
+        std::cout << "entered boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()" << std::endl;
+        stat_REG_boot2_SUBSTANTIATE_ptr_3STATE_flag_IDLE();
+        stat_REG_boot2_SUBSTANTIATE_ptr_3STATE_flag_WAIT();
+        stat_REG_boot2_SUBSTANTIATE_ptr_3STATE_flag_WRITE();
+        stat_REG_boot2_SUBSTANTIATE_ptr_number_Of_Implemented_Threads();
+        std::cout << "exiting boot2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot3_REG_INITIALISE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* obj)
+    {
+        std::cout << "entered boot3_REG_INITIALISE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()" << std::endl;
+        stat_REG_boot3_INITIALISE_ptr_3STATE_flag_IDLE();
+        stat_REG_boot3_INITIALISE_ptr_3STATE_flag_WAIT();
+        stat_REG_boot3_INITIALISE_ptr_3STATE_flag_WRITE();
+        std::cout << "exiting boot3_REG_INITIALISE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global()" << std::endl;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::boot4_PGM_INSTANTIATE_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global(OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* obj)
+    {
+        //if thread primed and system initialised, exit, else wait.
     }
     std::array<bool, 2> OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::dyn_REG_get_3STATE_flag_IDLE()
     {
@@ -69,29 +103,60 @@
         std::memcpy(&bytes_array, &uint8_t_Value, sizeof(uint8_t_Value));
         return bytes_array;
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_create_3STATE_flag_IDLE(std::array<bool, 2>* newDEAFULT_FlagSet)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot1_DEFINE_ptr_3STATE_flag_IDLE()
     {
-        _REG_ptr_3STATE_flag_IDLE = new std::array<bool, 2>;
+        _REG_ptr_3STATE_flag_IDLE = NULL;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot1_DEFINE_ptr_3STATE_flag_WAIT()
+    {
+        _REG_ptr_3STATE_flag_WAIT = NULL;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot1_DEFINE_ptr_3STATE_flag_WRITE()
+    {
+        _REG_ptr_3STATE_flag_WRITE = NULL;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot1_DEFINE_ptr_number_Of_Implemented_Threads()
+    {
+        _REG_ptr_number_Of_Implemented_Threads = NULL;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot2_SUBSTANTIATE_ptr_3STATE_flag_IDLE()
+    {
+        _REG_ptr_3STATE_flag_IDLE = new std::array<bool, 2>();
         while (stat_REG_get_ptr_3STATE_flag_IDLE() == NULL) {}
-        *_REG_ptr_3STATE_flag_IDLE = *newDEAFULT_FlagSet;
+        *_REG_ptr_3STATE_flag_IDLE = { true, true };
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_create_3STATE_flag_WAIT(std::array<bool, 2>* newDEAFULT_FlagSet)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot2_SUBSTANTIATE_ptr_3STATE_flag_WAIT()
     {
-        _REG_ptr_3STATE_flag_WAIT = new std::array<bool, 2>;
+        _REG_ptr_3STATE_flag_WAIT = new std::array<bool, 2>();
         while (stat_REG_get_ptr_3STATE_flag_WAIT() == NULL) {}
-        *_REG_ptr_3STATE_flag_WAIT = *newDEAFULT_FlagSet;
+        *_REG_ptr_3STATE_flag_WAIT = { true, true };
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_create_3STATE_flag_WRITE(std::array<bool, 2>* newDEAFULT_FlagSet)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot2_SUBSTANTIATE_ptr_3STATE_flag_WRITE()
     {
-        _REG_ptr_3STATE_flag_WRITE = new std::array<bool, 2>;
+        _REG_ptr_3STATE_flag_WRITE = new std::array<bool, 2>();
         while (stat_REG_get_ptr_3STATE_flag_WRITE() == NULL) {}
-        *_REG_ptr_3STATE_flag_WRITE = *newDEAFULT_FlagSet;
+        *_REG_ptr_3STATE_flag_WRITE = { true, true };
     }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_create_number_Of_Implemented_Threads(uint8_t* newDEFAULT_Value)
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot2_SUBSTANTIATE_ptr_number_Of_Implemented_Threads()
     {
-        _REG_ptr_number_Of_Implemented_Threads = new uint8_t();
+        _REG_ptr_number_Of_Implemented_Threads = new uint8_t(UINT8_MAX);
         while (stat_REG_get_ptr_number_Of_Implemented_Threads() == NULL) {}
-        *_REG_ptr_number_Of_Implemented_Threads = *newDEFAULT_Value;
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot3_INITIALISE_ptr_3STATE_flag_IDLE()
+    {
+        *_REG_ptr_3STATE_flag_IDLE = { false, false };
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot3_INITIALISE_ptr_3STATE_flag_WAIT()
+    {
+        *_REG_ptr_3STATE_flag_WAIT = { false, true };
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot3_INITIALISE_ptr_3STATE_flag_WRITE()
+    {
+        *_REG_ptr_3STATE_flag_WRITE = { true, false };
+    }
+    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_boot3_INITIALISE_ptr_number_Of_Implemented_Threads()
+    {
+        *_REG_ptr_number_Of_Implemented_Threads = uint8_t(4);
     }
     std::array<bool, 2>* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_get_ptr_3STATE_flag_IDLE()
     {
@@ -108,20 +173,4 @@
     uint8_t* OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_get_ptr_number_Of_Implemented_Threads()
     {
         return _REG_ptr_number_Of_Implemented_Threads;
-    }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_set_3STATE_flag_IDLE(std::array<bool, 2> new_FlagBitSet)
-    {
-        *_REG_ptr_3STATE_flag_IDLE = new_FlagBitSet;
-    }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_set_3STATE_flag_WAIT(std::array<bool, 2> new_FlagBitSet)
-    {
-        *_REG_ptr_3STATE_flag_WAIT = new_FlagBitSet;
-    }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_set_3STATE_flag_WRITE(std::array<bool, 2> new_FlagBitSet)
-    {
-        *_REG_ptr_3STATE_flag_WRITE = new_FlagBitSet;
-    }
-    void OpenAvrilCLIBWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global::stat_REG_set_number_Of_Implemented_Threads(uint8_t newValue)
-    {
-        *_REG_ptr_number_Of_Implemented_Threads = newValue;
     }
